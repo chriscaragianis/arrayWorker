@@ -1,17 +1,17 @@
 class arrayWorker {
 
   //sort an array in ascending order
-  public int[] sort(int[] arr) {
+  public static int[] sort(int[] arr) {
 
   }
 
   //returns the index of target in arr if it exists,
   // returns -1 otherwise
-  public int[] search(int[] arr, int target) {
+  public static int[] search(int[] arr, int target) {
 
   }
 
-  public int centeredAverage(int[] nums) {
+  public static int centeredAverage(int[] nums) {
     boolean sorted = false;
     int placeholder;
 
@@ -34,4 +34,7 @@ class arrayWorker {
     return total / (nums.length - 2);
   }
 
+  public static void main(String[] args){
+
+  }
 }
