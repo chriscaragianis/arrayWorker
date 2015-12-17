@@ -11,4 +11,27 @@ class arrayWorker {
 
   }
 
+  public int centeredAverage(int[] nums) {
+    boolean sorted = false;
+    int placeholder;
+
+    while (!sorted) {
+      sorted = true;
+      for (int i = 0; i < nums.length - 1; i++) {
+        if (nums[i] > nums[i+1]) {
+          sorted = false;
+          placeholder = nums[i];
+          nums[i] = nums[i+1];
+          nums[i+1] = placeholder;
+        }
+      }
+    }
+
+    int total = 0;
+    for (int i = 1; i < nums.length - 1; i++) {
+      total += nums[i];
+    }
+    return total / (nums.length - 2);
+  }
+
 }
